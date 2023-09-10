@@ -6,8 +6,8 @@
 def no_hesh_function(**kwargs):
     my_dict = dict()
     for key, value in kwargs.items():
-        if not isinstance(key, (int, float, str)):
-            key = str(key)
+        if not isinstance(value, (int, float, str)):
+            value = str(value)
         my_dict[value] = key
 
     return my_dict
